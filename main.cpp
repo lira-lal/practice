@@ -1,20 +1,18 @@
 #include <iostream>
-#include <string>
 #include <iomanip>
-
 using namespace std;
 
-int homework_lira(string a, string c) {
-    int b = stoi(a);
-    int d = stoi(c);
-    b = b + d;
+int a = 1;
+//소수를 더하는 함수
+double add_double(double b) {
+    b = b + a; //인자와 전역변수인 int a를 더한다.
     return b;
 }
-
+// 함수에 0.3을 넣어 소수값을 출력
 int main() {
-    int x = homework_lira("37", "29");
-    cout << x << endl;
-    // "37", "29" 를 int 타입으로 바꿔서 더한 값을 구하시오
+
+    double b = add_double(0.3);
+    cout << (double) b << endl;
 
     return 0;
 }
